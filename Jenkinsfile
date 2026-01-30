@@ -1,5 +1,4 @@
-
-pipeline 
+pipeline {
   agent any 
     parameters {
          choice(name: 'ENVIRONMENT' ,choices: ['QA','UAT'],description: 'pick Environment value')
@@ -23,6 +22,8 @@ pipeline
                 sh 'cp /root/.jenkins/workspace/maharastra/target/maharastra.war  /root/apache-tomcat-11.0.15/webapps'
                    }
                  echo "deployment has been done!"
+}
+}
 }
 }
 }
