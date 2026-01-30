@@ -25,7 +25,7 @@ pipeline {
     		echo "deployment has been done on UAT!"
 			}
 			echo "deployment has been done!"
-			fi
+		
 			
 			}}}	
 }}
